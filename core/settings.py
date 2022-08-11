@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'projects.apps.ProjectsConfig',
     'ckeditor',
+    'django_dump_load_utf8',
     'ckeditor_uploader',
     'rest_framework',
     "corsheaders",
@@ -158,7 +159,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
-try:
-    from .settings_prod import *
-except:
-    pass
+# try:
+#     from .settings_prod import *
+# except:
+#     pass
